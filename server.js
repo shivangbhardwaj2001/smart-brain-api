@@ -7,11 +7,12 @@ const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
+
 //knex.select is not a function ,bcoz of this error we assigned kex to postgres
 const db=knex({
   client: 'pg',
   connection: {
-    connectionString : process.env.DATABASE_URL,
+    connectionString : 'postgres://djzzafblsqvwxd:d453c8fbffdcc90cd827f4c8ac0f5d61c773cfa095afc3901e02199d4758298c@ec2-35-168-194-15.compute-1.amazonaws.com:5432/d9ka7i2uhqt7u0',
     ssl : true,
     // port : 5432
     // user : 'postgres',
