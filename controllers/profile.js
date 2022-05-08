@@ -15,7 +15,7 @@ const handleProfileGet = (req,res,db)=>{
   		}
   
   })
-  .catch(err=>res.status(400).json('error getting user'))
+  .catch(err=>res.status(400).json('error getting user: '+err))
    // database.users.forEach(user=>{
    // 	  if(user.id===id){
    // 	  	//return will come here or we will not able to access second person data from id

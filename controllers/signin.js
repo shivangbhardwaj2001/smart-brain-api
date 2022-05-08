@@ -24,7 +24,7 @@ db.select('email','hash').from('login')
 	} else{res.status(400).json('wrong credentials')}
 	
 })
-.catch(err=>res.status(400).json('wrong credintials'))
+.catch(err=>res.status(400).json('wrong credintials: '+err))
 	// if(req.body.email===database.users[0].email &&
 	// 	req.body.password===database.users[0].password){
 	// 	res.json(database.users[0]);
