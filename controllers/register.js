@@ -31,7 +31,7 @@ db.transaction(trx=>{
 	.catch(trx.rollback)
 })
 
-.catch(err=>res.status(400).json("unable to register"))
+.catch(err=>res.status(400).json("unable to register: "+err))
 //In place of unabble to register we can write err and it will give detail that user exist in db
 	// database.users.push(
 	// 		{
